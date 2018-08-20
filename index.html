@@ -7,12 +7,15 @@
 </head>
 
 <body style='margin : 0px; overflow: hidden;'>
+  
   <a-scene embedded arjs='sourceType: webcam;'>
       <a-marker preset='hiro'>
         <!-- Adding an OBJ file to an AR Project-->
         <a-entity 
-        position="0.5 -2 -0.5"
+        position="0 0 0"
         scale ="0.20 0.20 0.20"
+        geometry="primitive: box" material="color: gray" 
+        width="6" height="6"  rotation="0 0 0"  dynamic-body
             obj-model="obj: url(resources/Dlink.obj)">
         </a-entity>
               
