@@ -1,28 +1,25 @@
 <!DOCTYPE html>
 <html>
 <head>
-        <meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
 <script src="https://aframe.io/releases/0.6.1/aframe.min.js"></script>
 <script src="https://jeromeetienne.github.io/AR.js/aframe/build/aframe-ar.js"></script>
-<!-- <script src="https://cdn.rawgit.com/donmccurdy/aframe-extras/cfe5f316/dist/aframe-extras.js"></script> -->
 </head>
 
 <body style='margin : 0px; overflow: hidden;'>
   
   <a-scene embedded arjs='sourceType: webcam;'>
-      <!-- <a-marker preset='hiro'> -->
-      
-            <a-entity camera></a-entity>
+     
          <a-assets>
                 <video id="penguin-sledding" autoplay loop="true" src="resources/videoplayback.mp4"></video>
               </a-assets>
-             
+            
               <!-- Using the asset management system. -->
-              <a-video src="#penguin-sledding" width="16" height="9" position="0 0 -20"></a-video> 
+              <a-video src="#penguin-sledding" width="16" height="9" position="0 0 -20"></a-video>
             
               <!-- Defining the URL inline. Not recommended but more comfortable for web developers. -->
               <a-video src="resources/videoplayback.mp4"></a-video>
-      <!-- </a-marker> -->
+   
      
   </a-scene>
 </body>
